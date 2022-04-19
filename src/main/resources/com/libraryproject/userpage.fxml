@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="firstPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.libraryproject.UserpageController">
+    <children>
+        <TitledPane animated="false" layoutX="-6.0" prefHeight="600.0" prefWidth="907.0" text="Welcome!">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #7DCEA0;">
+                    <children>
+                        <Pane layoutX="48.0" layoutY="63.0" prefHeight="470.0" prefWidth="833.0">
+                            <children>
+                                <ImageView fitHeight="180.0" fitWidth="150.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@assets/JoGC+New+Cover+Option.png" />
+                                    </image>
+                                    <effect>
+                                        <DropShadow />
+                                    </effect>
+                                </ImageView>
+                                <Label layoutX="11.0" layoutY="202.0" prefHeight="44.0" prefWidth="127.0" text="Journal of Genetic Counseling" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Serif Italic" size="14.0" />
+                                    </font>
+                                    <effect>
+                                        <Bloom />
+                                    </effect>
+                                </Label>
+                                <ImageView fitHeight="180.0" fitWidth="150.0" layoutX="206.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@assets/Anaesthesia+Reports+.gif" />
+                                    </image>
+                                    <effect>
+                                        <DropShadow />
+                                    </effect>
+                                </ImageView>
+                                <Label layoutX="213.0" layoutY="202.0" prefHeight="44.0" prefWidth="127.0" text="  Anesthesia Reports" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Serif Italic" size="14.0" />
+                                    </font>
+                                    <effect>
+                                        <Bloom />
+                                    </effect>
+                                </Label>
+                                <ImageView fitHeight="180.0" fitWidth="150.0" layoutX="402.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@assets/Ecological+Research.gif" />
+                                    </image>
+                                    <effect>
+                                        <DropShadow />
+                                    </effect>
+                                </ImageView>
+                                <Label layoutX="412.0" layoutY="202.0" prefHeight="44.0" prefWidth="127.0" text="Ecological Research" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Serif Italic" size="14.0" />
+                                    </font>
+                                    <effect>
+                                        <Bloom />
+                                    </effect>
+                                </Label>
+                                <ImageView fitHeight="180.0" fitWidth="150.0" layoutX="593.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@assets/Ethics+and+Human+Research.png" />
+                                    </image>
+                                    <effect>
+                                        <DropShadow />
+                                    </effect>
+                                </ImageView>
+                                <Label layoutX="597.0" layoutY="202.0" prefHeight="44.0" prefWidth="127.0" text="Ethics and Human Research" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Serif Italic" size="14.0" />
+                                    </font>
+                                    <effect>
+                                        <Bloom />
+                                    </effect>
+                                </Label>
+                                <ImageView fitHeight="180.0" fitWidth="150.0" layoutX="206.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@assets/Medical+Journal+of+Australia+.gif" />
+                                    </image>
+                                    <effect>
+                                        <DropShadow />
+                                    </effect>
+                                </ImageView>
+                                <Label layoutX="210.0" layoutY="448.0" prefHeight="44.0" prefWidth="127.0" text="Medical Journal of Australia" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Serif Italic" size="14.0" />
+                                    </font>
+                                    <effect>
+                                        <Bloom />
+                                    </effect>
+                                </Label>
+                                <ImageView fitHeight="180.0" fitWidth="150.0" layoutX="402.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@assets/Near+Surface+Geophsyics.gif" />
+                                    </image>
+                                    <effect>
+                                        <DropShadow />
+                                    </effect>
+                                </ImageView>
+                                <Label layoutX="407.0" layoutY="448.0" prefHeight="44.0" prefWidth="127.0" text="Near Surface Geophysics" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Serif Italic" size="14.0" />
+                                    </font>
+                                    <effect>
+                                        <Bloom />
+                                    </effect>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Label layoutX="48.0" layoutY="26.0" text="Catalog">
+                            <font>
+                                <Font name="Century Gothic Italic" size="18.0" />
+                            </font>
+                        </Label>
+                  <Button fx:id="logOutButton" layoutX="808.0" layoutY="27.0" mnemonicParsing="false" onAction="#logOut" text="Log out" />
+                    </children>
+                </AnchorPane>
+            </content>
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TitledPane>
+    </children>
+</AnchorPane>

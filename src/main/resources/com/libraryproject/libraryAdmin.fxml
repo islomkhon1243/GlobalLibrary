@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="secondPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.libraryproject.LibraryAdminController">
+    <children>
+        <TitledPane animated="false" prefHeight="600.0" prefWidth="900.0" text="Database">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <TableView fx:id="userTable" editable="true" layoutX="38.0" layoutY="39.0" prefHeight="339.0" prefWidth="698.0" style="-fx-border-width: 2px;" tableMenuButtonVisible="true">
+                            <columns>
+                                <TableColumn fx:id="col_username" prefWidth="205.0" text="Username" />
+                                <TableColumn fx:id="col_email" prefWidth="205.0" text="Email" />
+                                <TableColumn fx:id="col_password" prefWidth="205.0" text="Password" />
+                            </columns>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                        </TableView>
+                        <TextField fx:id="usernameAdd" layoutX="38.0" layoutY="420.0" prefHeight="31.0" prefWidth="180.0" promptText="username" />
+                        <TextField fx:id="emailAdd" layoutX="244.0" layoutY="420.0" prefHeight="31.0" prefWidth="180.0" promptText="email" />
+                        <TextField fx:id="passwordAdd" layoutX="449.0" layoutY="420.0" prefHeight="31.0" prefWidth="180.0" promptText="password" />
+                        <Button layoutX="656.0" layoutY="420.0" mnemonicParsing="false" onAction="#buttonAdd" prefHeight="31.0" prefWidth="74.0" text="Add">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                  <Button fx:id="logOutButton" layoutX="788.0" layoutY="39.0" mnemonicParsing="false" onAction="#logOut" text="Log out" />
+                    </children>
+                </AnchorPane>
+            </content>
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TitledPane>
+    </children>
+</AnchorPane>
